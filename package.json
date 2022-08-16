@@ -1,11 +1,12 @@
 {
-  "name": "cleaning",
+  "name": "gulp-template",
   "version": "1.0.0",
-  "description": "Cleaning services",
+  "description": "Gulp template for quick web development start. Includes modules such as BrowserSync, Sass, notify, etc.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
   },
   "author": "@ander481",
   "license": "UNLICENSED",
