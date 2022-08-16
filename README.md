@@ -1,5 +1,14 @@
-Thanks for the contributiona# gulp-template
+# gulp-template
 Gulp template for quick web development start. Includes modules such as BrowserSync, Sass, notify, etc.
 
-For quick installation `npm i`
-### Attention! The template is still in development
+## Attention! The template is still in development
+
+## Install
+```console
+npm install
+```
+
+## Run
+```console
+npm run dev
+```

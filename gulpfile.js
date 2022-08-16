@@ -2,12 +2,11 @@ import gulp from "gulp";
 import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
 
-
 global.app = {
     path: path,
     gulp: gulp,
-    plugins: plugins
-}
+    plugins: plugins,
+};
 
 // Tasks
 
@@ -19,8 +18,8 @@ import { watchPages } from "./gulp/tasks/watchPages.js";
 
 // --------------------------------------------
 
-const watch = gulp.parallel( watchComponents, watchPages )
+const watch = gulp.parallel(watchComponents, watchPages);
 
-const dev = gulp.series(reset, copy, gulp.parallel( watch, server));
+const dev = gulp.series(reset, copy, gulp.parallel(watch, server));
 
-gulp.task('default', dev);
+gulp.task("default", dev);
