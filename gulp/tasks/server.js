@@ -5,7 +5,7 @@ export const server = (done) => {
   app.plugins.bs.init({
     server: app.path.build.pages,
   });
-  console.log(chalk.bgGreenBright("Server successfully started!"));
+  console.log(chalk.bgGreen("Server successfully started!"));
   // if any *.html from dist was modified -> reload
   app.gulp.watch(app.path.build.pages).on("change", app.plugins.bs.reload);
   console.log(
